@@ -3,7 +3,7 @@
 <head><meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Engage</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>Engage2</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 
 
 
@@ -15586,18 +15586,88 @@ jp-needs-light-background
 </div>
 </div>
 </div>
+</div>The sales prediction results are given below. These are the units count which are estimated to be sold according to the sales pattern of the datasets. <div class="jp-Cell jp-CodeCell jp-Notebook-cell  jp-mod-noInput ">
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output " data-mime-type="text/html">
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>M01AB</th>
+      <th>M01AE</th>
+      <th>N02BA</th>
+      <th>N02BE</th>
+      <th>N05B</th>
+      <th>N05C</th>
+      <th>R03</th>
+      <th>R06</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Average</th>
+      <td>34.710266</td>
+      <td>27.342229</td>
+      <td>28.171266</td>
+      <td>209.240919</td>
+      <td>62.360863</td>
+      <td>3.987930</td>
+      <td>35.603629</td>
+      <td>19.550585</td>
+    </tr>
+    <tr>
+      <th>Vanilla LSTM</th>
+      <td>37.623108</td>
+      <td>27.534327</td>
+      <td>23.610294</td>
+      <td>269.950317</td>
+      <td>55.982811</td>
+      <td>4.271245</td>
+      <td>32.908825</td>
+      <td>17.261889</td>
+    </tr>
+    <tr>
+      <th>Stacked LSTM</th>
+      <td>37.602489</td>
+      <td>26.731209</td>
+      <td>23.761332</td>
+      <td>268.016632</td>
+      <td>56.733463</td>
+      <td>2.629960</td>
+      <td>32.981384</td>
+      <td>18.660324</td>
+    </tr>
+    <tr>
+      <th>Bidirectional LSTM</th>
+      <td>38.539761</td>
+      <td>27.962538</td>
+      <td>22.111977</td>
+      <td>277.060028</td>
+      <td>58.575012</td>
+      <td>4.447941</td>
+      <td>34.097073</td>
+      <td>18.091780</td>
+    </tr>
+  </tbody>
+</table>
 </div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>For rolling forecasting Naive and Seasonal Naive forecast methods perform deficiently and thus other methods such as ARIMA method must be tried.</p>
 
 </div>
+
 </div>
+
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell  jp-mod-noInput ">
+
+</div>For rolling forecasting Naive and Seasonal Naive forecast methods perform deficiently and thus other methods such as ARIMA method must be tried.<div class="jp-Cell jp-CodeCell jp-Notebook-cell  jp-mod-noInput ">
 
 <div class="jp-Cell-outputWrapper">
 <div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
@@ -15890,10 +15960,10 @@ jp-needs-light-background
   </thead>
   <tbody>
     <tr>
-      <th>Average MSE</th>
-      <td>75.428945</td>
-      <td>76.460997</td>
-      <td>1191.186483</td>
+      <th>Average</th>
+      <td>34.710266</td>
+      <td>28.171266</td>
+      <td>35.603629</td>
       <td>450.0</td>
       <td>350.0</td>
       <td>400.0</td>
@@ -15902,10 +15972,10 @@ jp-needs-light-background
       <td>10.0</td>
     </tr>
     <tr>
-      <th>Average MAPE</th>
-      <td>22.727171</td>
-      <td>51.351070</td>
-      <td>50.243843</td>
+      <th>Vanilla LSTM</th>
+      <td>37.623108</td>
+      <td>23.610294</td>
+      <td>32.908825</td>
       <td>450.0</td>
       <td>350.0</td>
       <td>400.0</td>
@@ -15914,10 +15984,10 @@ jp-needs-light-background
       <td>10.0</td>
     </tr>
     <tr>
-      <th>Vanilla LSTM MSE</th>
-      <td>85.546344</td>
-      <td>38.945378</td>
-      <td>727.408924</td>
+      <th>Stacked LSTM</th>
+      <td>37.602489</td>
+      <td>23.761332</td>
+      <td>32.981384</td>
       <td>450.0</td>
       <td>350.0</td>
       <td>400.0</td>
@@ -15926,58 +15996,10 @@ jp-needs-light-background
       <td>10.0</td>
     </tr>
     <tr>
-      <th>Vanilla LSTM MAPE</th>
-      <td>25.349667</td>
-      <td>34.996276</td>
-      <td>43.421212</td>
-      <td>450.0</td>
-      <td>350.0</td>
-      <td>400.0</td>
-      <td>15.0</td>
-      <td>5.0</td>
-      <td>10.0</td>
-    </tr>
-    <tr>
-      <th>Stacked LSTM MSE</th>
-      <td>84.016034</td>
-      <td>35.093757</td>
-      <td>895.251478</td>
-      <td>450.0</td>
-      <td>350.0</td>
-      <td>400.0</td>
-      <td>15.0</td>
-      <td>5.0</td>
-      <td>10.0</td>
-    </tr>
-    <tr>
-      <th>Stacked LSTM MAPE</th>
-      <td>25.185488</td>
-      <td>34.265798</td>
-      <td>52.279368</td>
-      <td>450.0</td>
-      <td>350.0</td>
-      <td>400.0</td>
-      <td>15.0</td>
-      <td>5.0</td>
-      <td>10.0</td>
-    </tr>
-    <tr>
-      <th>Bidirectional LSTM MSE</th>
-      <td>89.568805</td>
-      <td>37.569835</td>
-      <td>773.467168</td>
-      <td>450.0</td>
-      <td>350.0</td>
-      <td>400.0</td>
-      <td>15.0</td>
-      <td>5.0</td>
-      <td>10.0</td>
-    </tr>
-    <tr>
-      <th>Bidirectional LSTM MAPE</th>
-      <td>26.255504</td>
-      <td>35.037397</td>
-      <td>50.928509</td>
+      <th>Bidirectional LSTM</th>
+      <td>38.539761</td>
+      <td>22.111977</td>
+      <td>34.097073</td>
       <td>450.0</td>
       <td>350.0</td>
       <td>400.0</td>
@@ -16047,76 +16069,40 @@ jp-needs-light-background
   </thead>
   <tbody>
     <tr>
-      <th>Average MSE</th>
-      <td>67</td>
-      <td>103</td>
-      <td>308</td>
-      <td>1009.103937</td>
-      <td>517.313725</td>
-      <td>3086.987507</td>
+      <th>Average</th>
+      <td>45</td>
+      <td>62</td>
+      <td>53</td>
+      <td>684.535312</td>
+      <td>314.005463</td>
+      <td>533.693765</td>
     </tr>
     <tr>
-      <th>Average MAPE</th>
-      <td>36</td>
-      <td>84</td>
-      <td>63</td>
-      <td>553.910465</td>
-      <td>423.944270</td>
-      <td>633.995858</td>
+      <th>Vanilla LSTM</th>
+      <td>47</td>
+      <td>57</td>
+      <td>51</td>
+      <td>712.679421</td>
+      <td>287.464833</td>
+      <td>513.099015</td>
     </tr>
     <tr>
-      <th>Vanilla LSTM MSE</th>
-      <td>71</td>
-      <td>73</td>
-      <td>241</td>
-      <td>1074.651408</td>
-      <td>369.200246</td>
-      <td>2412.316602</td>
+      <th>Stacked LSTM</th>
+      <td>47</td>
+      <td>57</td>
+      <td>51</td>
+      <td>712.484111</td>
+      <td>288.382837</td>
+      <td>513.664359</td>
     </tr>
     <tr>
-      <th>Vanilla LSTM MAPE</th>
-      <td>38</td>
-      <td>69</td>
-      <td>58</td>
-      <td>584.996155</td>
-      <td>349.981380</td>
-      <td>589.380775</td>
-    </tr>
-    <tr>
-      <th>Stacked LSTM MSE</th>
-      <td>70</td>
-      <td>70</td>
-      <td>267</td>
-      <td>1064.995990</td>
-      <td>350.468473</td>
-      <td>2676.193532</td>
-    </tr>
-    <tr>
-      <th>Stacked LSTM MAPE</th>
-      <td>38</td>
-      <td>69</td>
-      <td>64</td>
-      <td>583.098689</td>
-      <td>346.309533</td>
-      <td>646.710868</td>
-    </tr>
-    <tr>
-      <th>Bidirectional LSTM MSE</th>
-      <td>73</td>
-      <td>72</td>
-      <td>248</td>
-      <td>1099.626696</td>
-      <td>362.621595</td>
-      <td>2487.516301</td>
-    </tr>
-    <tr>
-      <th>Bidirectional LSTM MAPE</th>
-      <td>39</td>
-      <td>70</td>
-      <td>63</td>
-      <td>595.356446</td>
-      <td>350.186934</td>
-      <td>638.300927</td>
+      <th>Bidirectional LSTM</th>
+      <td>48</td>
+      <td>55</td>
+      <td>52</td>
+      <td>721.309065</td>
+      <td>278.194030</td>
+      <td>522.280175</td>
     </tr>
   </tbody>
 </table>
@@ -16128,8 +16114,6 @@ jp-needs-light-background
 </div>
 
 </div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs jp-mod-noInput ">
 
 </div>
 </body>
